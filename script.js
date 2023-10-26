@@ -81,3 +81,41 @@ class Car{
 
 // car2.go()
 // car2.printInfo()
+
+
+//задание!!!
+//Класс Собака
+//       кличка
+//       возраст
+//       метод() выводит Гав-гав!
+//Класс Доберман унаследовать от Собака
+//поля унаследовать от Собака
+//добавить поле:дресировка= true/faise
+//переопределить метод() выводит Тяф-тяф!
+
+//Решение
+class Dog{
+
+    constructor(name,age){
+        this.name = name
+        this.age = age
+    }
+    big(){
+        console.log('Гав-гав');
+    }
+}
+
+class Doberman extends Dog{
+  
+    constructor(name,age,traning){
+        super(name, age)
+        this.traning = traning
+    }
+
+    big(){
+ //       super.big()
+        console.log( "Тяф-тяф");
+    }
+}
+let dog1 = new Doberman("Graf",7,true)
+dog1.big()
