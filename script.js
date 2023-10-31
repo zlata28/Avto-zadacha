@@ -94,28 +94,46 @@ class Car{
 //переопределить метод() выводит Тяф-тяф!
 
 //Решение
-class Dog{
+// class Dog{
 
-    constructor(name,age){
-        this.name = name
-        this.age = age
-    }
-    big(){
-        console.log('Гав-гав');
-    }
-}
+//     constructor(name,age){
+//         this.name = name
+//         this.age = age
+//     }
+//     big(){
+//         console.log('Гав-гав');
+//     }
+// }
 
-class Doberman extends Dog{
+// class Doberman extends Dog{
   
-    constructor(name,age,traning){
-        super(name, age)
-        this.traning = traning
-    }
+//     constructor(name,age,traning){
+//         super(name, age)
+//         this.traning = traning
+//     }
 
-    big(){
- //       super.big()
-        console.log( "Тяф-тяф");
-    }
+//     big(){
+//  //       super.big()
+//         console.log( "Тяф-тяф");
+//     }
+// }
+// let dog1 = new Doberman("Graf",7,true)
+// dog1.big()
+
+
+
+try{
+    console.log("это 1ый блок")
+   // lalala;
+    console.log("это 2ый блок")
+} catch(error){
+    console.error(error + "это 3 блок");
 }
-let dog1 = new Doberman("Graf",7,true)
-dog1.big()
+
+setTimeout(function() {
+    try {
+      noSuchVariable; // try..catch обрабатывает ошибку!
+    } catch {
+      alert( "ошибка поймана!" );
+    }
+  }, 1000);
