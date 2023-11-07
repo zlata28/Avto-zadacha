@@ -122,18 +122,30 @@ class Car{
 
 
 
-try{
-    console.log("это 1ый блок")
-   // lalala;
-    console.log("это 2ый блок")
-} catch(error){
-    console.error(error + "это 3 блок");
-}
+// try{
+//     console.log("это 1ый блок")
+//    // lalala;
+//     console.log("это 2ый блок")
+// } catch(error){
+//     console.error(error + "это 3 блок");
+// }
 
-setTimeout(function() {
-    try {
-      noSuchVariable; // try..catch обрабатывает ошибку!
-    } catch {
-      alert( "ошибка поймана!" );
-    }
-  }, 1000);
+// setTimeout(function() {
+//     try {
+//       noSuchVariable; // try..catch обрабатывает ошибку!
+//     } catch {
+//       alert( "ошибка поймана!" );
+//     }
+//   }, 1000);
+
+
+// fetch('https://dummyjson.com/products/1')
+//     .then(res => res.json())
+//     .then(json => console.log(json))
+//     .catch(e => console.log(e.message)); 
+
+
+//async function()
+fetch('https://dummyjson.com/products/categories')
+    .then(res => res.json())
+    .then(console.log)
