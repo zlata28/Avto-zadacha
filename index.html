@@ -2,15 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .inputCar{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: auto;
+            align-items: center;
+        }
+        .engine{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px black;
+        }
+    </style>
+
+    <title>AVTO</title>
 </head>
 <body>
+    <div class="inputCar">
+        <h1>АВТОМОБИЛЬ</h1>
+        <span>
+            <input type="text" name="" id="markInput"> 
+           Марка
+        </span>
+        <span>
+            <input type="text" name="" id="modeInput"> 
+           Модель
+        </span>
+        <span>
+            <input type="text" name="" id="yearInput"> 
+           Год
+        </span>
+        <button onclick="createCar()">Save</button>
+    </div>
+    <button onclick="car3.printInfo">Инфо</button>
+    <div class="engine" id="engi"></div> 
+    <button onclick="driv1.speak()">Поехали</button>
     <script src="script.js"></script>
 
-
-
-    
 </body>
 </html>
